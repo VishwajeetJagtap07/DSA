@@ -1,17 +1,55 @@
+// package Array;
+
+// import java.util.*;
+
+// public class binary {
+//     public static int Binary_Search(int numbers[], int key){
+
+//         int start = 0;
+//         int end = numbers.length -1;
+
+//         while(start <= end){
+//             int mid = (start + end)/2;
+
+//             if(numbers[mid] == key){
+//                 return mid;
+//             }
+//             if(numbers[mid] < key){
+//                 start = mid+1;
+//             }
+//             if(numbers[mid] > key){
+//                 end = mid-1;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         int numbers[] = {2,4,6,8,10,12,14,16};
+//         int key = 10;
+
+//         System.out.println("Index for key is : " + Binary_Search(numbers, key));
+//     }
+    
+// }
+
+
 package Array;
 
 import java.util.*;
 
-public class binary {
-    public static int Binary_Search(int numbers[], int key){
+public class binary{
 
-        int start = 0;
-        int end = numbers.length -1;
+    public static int BinarySearch(int numbers[], int key){
+
+        int start= 0;
+        int end = numbers.length-1;
 
         while(start <= end){
-            int mid = (start + end)/2;
 
-            if(numbers[mid] == key){
+            int mid = (start + end )/2;
+
+            if(numbers[mid]==key){
                 return mid;
             }
             if(numbers[mid] < key){
@@ -21,14 +59,17 @@ public class binary {
                 end = mid-1;
             }
         }
-        return -1;
+
+        return-1;
     }
 
     public static void main(String[] args) {
-        int numbers[] = {2,4,6,8,10,12,14,16};
+        int numbers[] = {2,4,6,8,10,23,14,16};
         int key = 10;
 
-        System.out.println("Index for key is : " + Binary_Search(numbers, key));
+        System.out.println("The number is at the index : " + BinarySearch(numbers, key));
     }
-    
 }
+
+//Time complexity is = 0(logn)
+

@@ -13,7 +13,7 @@ public class creating {
 
         String fruits[] = {"Mango", "Apple", "Banana"};
         
-        System.out.println(fruits[0]);
+        System.out.println(fruits[1]);
     }
     
 

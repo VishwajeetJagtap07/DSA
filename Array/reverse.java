@@ -31,3 +31,5 @@ public class reverse {
     }
     
 }
+
+//Time complexity = o(n)

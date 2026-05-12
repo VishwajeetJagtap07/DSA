@@ -1,4 +1,4 @@
-
+package forLoops;
 
 public class reverse {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class reverse {
 
         }
         System.out.println(" This is the reverse order of the number");
-        //System.out.println(LastDigt);
+        //System.out.println(LastDigit)
     }
     
 }

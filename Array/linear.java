@@ -23,3 +23,5 @@ public class linear {
     }
     
 }
+
+//time complexity = O(n)
